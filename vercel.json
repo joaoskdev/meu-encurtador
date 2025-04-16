@@ -1,0 +1,13 @@
+{
+    "functions": {
+      "api/*.php": {
+        "runtime": "php"
+      }
+    },
+    "rewrites": [
+      {
+        "source": "/:codigo",
+        "destination": "/api/redirecionar.php?codigo=:codigo"
+      }
+    ]
+  }
